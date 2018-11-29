@@ -1,9 +1,6 @@
 const model = require('../tableModel.js');
 const tool = require('../tool');
-// const Redis = require('ioredis');
-// const redis = new Redis();
-// const Store = require("../Store.js");
-// const store = new Store();
+
 let UserModel = model.User;
 class UserController {
     /**

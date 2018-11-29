@@ -21,6 +21,7 @@
         "koa-multer": "1.0.2",
         "koa-body":"4.0.4",
         "formidable":"1.2.1",
-        "http-proxy-middleware":"0.19.1"
+        "http-proxy-middleware":"0.19.1",
+        "koa-convert":"1.2.0"
     }
 }
