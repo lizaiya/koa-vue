@@ -6,6 +6,7 @@ const router = require('./router/index'); //路由
 const tool = require('./tool'); //路由
 const staticCache = require('koa-static-cache'); //静态文件服务器
 const session = require('koa-session2');
+const convert =require('koa-convert')
 const historyApiFallback = require('koa2-connect-history-api-fallback');
 const verificationToken = require('./middleware/verificationToken.js');
 const app = new Koa();
@@ -16,14 +17,15 @@ app.use(async (ctx, next) => {
    await next();
 });
 app.use(historyApiFallback());
-app.use(cors({
-     origin: 'http://localhost:8080',
+
+app.use(convert(cors({
+    //  origin: 'http://localhost:8080',
      exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'],
      maxAge: 5,
      credentials: true,
      allowMethods: ['GET', 'POST', 'DELETE', 'OPTIONS', 'PUT'],
      allowHeaders: ['Content-Type', 'Authorization', 'Accept', 'X-Custom-Header', 'anonymous'],
-}));
+})));
 app.use(koaBody({
     multipart: true, // 支持文件上传
     formidable: {
@@ -67,4 +69,4 @@ app
     .use(router.allowedMethods())
     //跨域
 
-app.listen(3600);
+app.listen(8081);

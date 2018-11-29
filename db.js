@@ -1,13 +1,5 @@
 const Sequelize = require('sequelize');
 const config=require('./config');
-// let config = {
-//     dialect: 'mysql',
-//     database: 'personal',
-//     username: 'root',
-//     password: 'zaiya128339',
-//     host: 'localhost',
-//     port: 3306
-// };
 let sequelize = new Sequelize(config.database, config.username, config.password, {
     host: config.host,
     dialect: config.dialect,
