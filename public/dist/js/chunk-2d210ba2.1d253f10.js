@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d210ba2"],{b8b8:function(n,e,t){"use strict";t.r(e);var u=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v("\n    注册\n")])},l=[],c=t("2877"),i={},o=Object(c["a"])(i,u,l,!1,null,null,null);o.options.__file="Reg.vue";e["default"]=o.exports}}]);

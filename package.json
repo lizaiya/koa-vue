@@ -1,0 +1,26 @@
+{
+    "name": "personal",
+    "version": "1.0.0",
+    "description": "个人学习网站",
+    "main": "app.js",
+    "author": "lizaiya",
+    "license": "MIT",
+    "dependencies": {
+        "koa": "^2.6.2",
+        "koa-router": "^7.4.0",
+        "mz": "^2.7.0",
+        "mime": "^2.3.1",
+        "koa-static": "^5.0.0",
+        "mysql2": "^1.6.4",
+        "koa-cors": "^0.0.16",
+        "koa-session2": "^2.2.8",
+        "ioredis": "^4.2.0",
+        "sequelize": "^4.41.2",
+        "koa-static-cache": "^5.1.2",
+        "koa2-connect-history-api-fallback": "0.0.6",
+        "koa-multer": "1.0.2",
+        "koa-body":"4.0.4",
+        "formidable":"1.2.1",
+        "http-proxy-middleware":"0.19.1"
+    }
+}
